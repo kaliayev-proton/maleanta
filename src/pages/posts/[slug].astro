@@ -1,8 +1,7 @@
 ---
-import type { GetStaticPaths } from "astro";
 import { Image } from "astro:assets";
-import { getEntry } from "astro:content";
-import { getCollection } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
+import type { GetStaticPaths } from "astro";
 import BlogLayout from "src/layouts/BlogLayout.astro";
 import { Formatter } from "src/utils/formatter";
 
@@ -29,7 +28,8 @@ const author: Author | undefined = await getEntry("author", data.author.id);
 ---
 
 <BlogLayout title={title}>
-  <h1 class="text-xs text-gray-500 mb-0">{title}</h1>
+  <h1 class="font-serif">{title}</h1>
+  <span class="text-accent-500">Hola color</span>
   <!-- <h4 class="text-xs text-gray-400 mb-0">{author}</h4> -->
   <div class="text-md text-gray-400 mb-0 flex flex-row ml-5">
     <Image

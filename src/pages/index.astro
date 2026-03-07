@@ -1,8 +1,8 @@
 ---
 import { getCollection } from "astro:content";
+import TypeBlogPost from "src/components/TypeBlogPost.astro";
 import { siteConfig } from "../config/site-config";
 import MainLayout from "../layouts/MainLayout.astro";
-import TypeBlogPost from "src/components/TypeBlogPost.astro";
 
 const blogPosts = await getCollection("blog", (post) => post.data.isDraft === false);
 
@@ -21,7 +21,7 @@ const blogPosts = await getCollection("blog", (post) => post.data.isDraft === fa
 ---
 
 <MainLayout title="Maleanta Images">
-  <div class="bg-gray-900 py-24 sm:py-32">
+  <div class="py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h1
@@ -29,8 +29,8 @@ const blogPosts = await getCollection("blog", (post) => post.data.isDraft === fa
         >
           {siteConfig.title}
         </h1>
-        <a class="mr-4" href="/blog/1">Go to Blog</a>
-        <a class="mr-4" href="/authors">Go to Authors</a>
+        <a class="btn mr-4 text-brand-900" href="/blog/1">Go to Blog</a>
+        <a class="btn mr-4 text-brand-900" href="/authors">Go to Authors</a>
 
         <p class="mt-2 text-lg/8 text-gray-300">
           {siteConfig.description}

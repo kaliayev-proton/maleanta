@@ -1,0 +1,26 @@
+@layer base {
+  /* body {
+    @apply bg-neutral-50 text-neutral-900 antialiased;
+  }
+    */
+
+  h1 {
+    @apply text-4xl text-tahiti font-bold bg-blend-color bg-linear-to-r from-blue-500 to-purple-500 p-10 rounded-lg;
+  }
+
+  h2 {
+    @apply text-2xl text-blue-500 my-5;
+  }
+
+  h3 {
+    @apply text-xl text-blue-900 my-5;
+  }
+
+  p {
+    @apply text-blue-900 my-5;
+  }
+
+  a {
+    @apply text-blue-600 hover:underline;
+  }
+}
