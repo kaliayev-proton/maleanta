@@ -1,13 +1,13 @@
 @layer components {
-  /* .container-page {
+	/* .container-page {
     @apply max-w-6xl mx-auto px-6;
   } */
 
-  .btn {
-    @apply px-4 py-2 rounded-lg font-medium transition;
-  }
+	.btn {
+		@apply px-4 py-2 rounded-lg font-medium transition;
+	}
 
-  /* .btn-primary {
+	/* .btn-primary {
     @apply btn bg-black text-white hover:bg-neutral-800;
   } */
 }
