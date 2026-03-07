@@ -1,0 +1,73 @@
+/* Preload se hace en el <head> del layout o index */
+@layer base {
+  /* Serif para títulos */
+  @font-face {
+    font-family: "Literata";
+    src: url("/src/assets/fonts/Literata-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Literata";
+    src: url("/src/assets/fonts/Literata-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Literata";
+    src: url("/src/assets/fonts/Literata-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Literata";
+    src: url("/src/assets/fonts/Literata-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Literata";
+    src: url("/src/assets/fonts/Literata-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Sans-serif para cuerpo */
+  @font-face {
+    font-family: "Inter";
+    src: url("/src/assets/fonts/Inter-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("/src/assets/fonts/Inter-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Zodiak";
+    src: url("/src/assets/fonts/Zodiak-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Zodiak";
+    src: url("/src/assets/fonts/Zodiak-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+}
