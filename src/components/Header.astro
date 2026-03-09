@@ -1,0 +1,9 @@
+---
+import { siteConfig } from "../config/site-config";
+---
+
+<header class="bg-white shadow-md p-5 border-2 m-2">
+  <h1 class="uppercase type-writer">
+    {[...siteConfig.title].map((char) => <span>{char}</span>)}
+  </h1>
+</header>

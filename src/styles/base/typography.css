@@ -1,11 +1,6 @@
 @layer base {
-  /* body {
-    @apply bg-neutral-50 text-neutral-900 antialiased;
-  }
-    */
-
   h1 {
-    @apply text-4xl text-tahiti font-bold bg-blend-color bg-linear-to-r from-blue-500 to-purple-500 p-10 rounded-lg;
+    @apply text-4xl text-blue-900;
   }
 
   h2 {

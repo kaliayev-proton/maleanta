@@ -3,7 +3,10 @@
 @import "./base/variables.css";
 @import "./base/typography.css";
 @import "./base/elements.css";
+@import "./base/fonts.css";
 /* components */
 @import "./components/buttons.css";
+@import "./shapes/trapezoid.css";
+@import "./effects/type-writer.css";
 @tailwind utilities;
 /* @reference "tailwindcss"; */

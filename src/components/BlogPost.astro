@@ -9,7 +9,7 @@ const {labels, title, description, date, author, authorRole, image, url} = Astro
     <time datetime={date} class="text-gray-400">{Formatter.formatDate(date)}</time>
     {labels.map((label: string) => (
       <a
-        href="#"
+        href="/"
         class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800"
         >{label}</a>
     ))}
@@ -35,7 +35,7 @@ const {labels, title, description, date, author, authorRole, image, url} = Astro
     />
     <div class="text-sm/6">
       <p class="font-semibold text-white">
-        <a href="#">
+        <a href="/">
           <span class="absolute inset-0"></span>
             {author}
         </a>

@@ -1,9 +1,9 @@
 html {
-  @apply px-10;
+  /* @apply px-10; */
   background-color: var(--main-bg);
   scroll-behavior: smooth;
 }
 
 body {
-  @apply mt-10;
+  /* @apply mt-10; */
 }
