@@ -1,0 +1,26 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import TypeBlogPost from "src/components/TypeBlogPost.astro";
+import MainLayout from "src/layouts/MainLayout.astro";
+import { siteConfig } from "../../config/site-config";
+
+const blogPosts = await getCollection(
+  "blog",
+  (post: CollectionEntry<"blog">) => post.data.isDraft === false,
+);
+---
+
+<MainLayout title="Maleanta Editorial">
+  <div class="">
+    <div class="">
+      <div class="">
+        <div class="trapezoid bg-mal-secondary flex flex-wrap">
+          <p class="text-mal-primary font-zodiak text-2xl">
+            <span>"</span>{siteConfig.intro}<span>"</span>
+          </p>
+          <p class="text-mal-primary font-zodiak text-2xl">- {siteConfig.author} -</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

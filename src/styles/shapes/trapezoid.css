@@ -6,7 +6,7 @@
     justify-content: center;
     padding: 10rem 2rem;
 
-    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
     transition: clip-path 0.7s ease-in-out;
   }
   .trapezoid:hover {
@@ -31,18 +31,18 @@
   }
 
   .trapezoid-0 {
-    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
   }
   .trapezoid-1 {
-    clip-path: polygon(0% 10%, 100% 20%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 2%, 100% 5%, 100% 100%, 0% 100%);
   }
   .trapezoid-2 {
-    clip-path: polygon(0% 20%, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 5%, 100% 1%, 100% 100%, 0% 100%);
   }
   .trapezoid-3 {
-    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
   }
   .trapezoid-4 {
-    clip-path: polygon(0% 20%, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 3%, 100% 100%, 0% 100%);
   }
 }

@@ -16,6 +16,6 @@
   }
 
   a {
-    @apply text-blue-600 hover:underline;
+    @apply text-mal-primary hover:underline;
   }
 }

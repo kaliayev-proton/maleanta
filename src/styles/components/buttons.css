@@ -3,7 +3,13 @@
     @apply max-w-6xl mx-auto px-6;
   } */
 
-	.btn {
+	.btn-primary {
+		@apply px-4 py-2 rounded-lg font-medium transition;
+	}
+	.btn-secondary {
+		@apply px-4 py-2 rounded-lg font-medium transition;
+	}
+	.btn-tertiary {
 		@apply px-4 py-2 rounded-lg font-medium transition;
 	}
 

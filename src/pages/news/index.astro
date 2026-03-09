@@ -1,12 +1,12 @@
 ---
-import { getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import TypeBlogPost from "src/components/TypeBlogPost.astro";
-import { siteConfig } from "../config/site-config";
-import MainLayout from "../layouts/MainLayout.astro";
+import MainLayout from "src/layouts/MainLayout.astro";
+import { siteConfig } from "../../config/site-config";
 
 const blogPosts = await getCollection(
   "blog",
-  (post) => post.data.isDraft === false,
+  (post: CollectionEntry<"blog">) => post.data.isDraft === false,
 );
 ---
 
@@ -14,8 +14,12 @@ const blogPosts = await getCollection(
   <div class="">
     <div class="">
       <div class="">
-        <a class="btn-primary mr-4 text-mal-primary" href="/blog/1">Go to Blog</a>
-        <a class="btn-primary mr-4 text-mal-primary" href="/authors">Go to Authors</a>
+        <a class="btn-primary mr-4 text-mal-primary" href="/blog/1"
+          >Go to Blog</a
+        >
+        <a class="btn-primary mr-4 text-mal-primary" href="/authors"
+          >Go to Authors</a
+        >
         <div class="trapezoid bg-mal-secondary flex flex-wrap">
           <p class="text-mal-primary font-telma text-2xl">
             {siteConfig.description}
@@ -34,10 +38,12 @@ const blogPosts = await getCollection(
           </p>
         </div>
       </div>
-      <div
-        class=""
-      >
-        {blogPosts.map((post, index) => <TypeBlogPost post={post} key={index} />)}
+      <div class="">
+        {
+          blogPosts.map((post: any, index: number) => (
+            <TypeBlogPost post={post} key={index} />
+          ))
+        }
       </div>
     </div>
   </div>
