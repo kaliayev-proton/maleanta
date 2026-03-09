@@ -1,0 +1,79 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import TypeBlogPost from "src/components/TypeBlogPost.astro";
+import MainLayout from "src/layouts/MainLayout.astro";
+import { siteConfig } from "../../config/site-config";
+
+const blogPosts = await getCollection(
+  "blog",
+  (post: CollectionEntry<"blog">) => post.data.isDraft === false,
+);
+---
+
+<MainLayout title="Maleanta Editorial">
+  <div class="">
+    <div>
+        <h2 class="text-mal-font">Colors</h2>
+        <hr class="h-1 bg-mal-accent border-0 my-4">
+        <div class="flex flex-wrap gap-2">
+            <div class="bg-mal-primary text-mal-font p-10 mb-2">Primary</div>
+            <div class="bg-mal-secondary text-mal-primary p-10 mb-2">Secondary</div>
+            <div class="bg-mal-tertiary text-mal-primary p-10 mb-2">Tertiary</div>
+            <div class="bg-mal-accent text-mal-font p-10 mb-2">Accent</div>
+            <div class="bg-mal-neutral text-mal-font p-10 mb-2">Neutral</div>
+        </div>
+    </div>
+    <div>
+        <h2 class="text-mal-font">Typography</h2>
+        <hr class="h-1 bg-mal-accent border-0 my-4">
+        <h3>Zodiak</h3>
+        <p class="font-zodiak">{siteConfig.description}</p>
+        <p class="font-zodiak text-9xl">{siteConfig.description}</p>
+        <h3>Telma</h3>
+        <p class="font-telma">{siteConfig.description}</p>
+        <p class="font-telma text-9xl">{siteConfig.description}</p>
+        <h3>Grotesk</h3>
+        <p class="font-grotesk">{siteConfig.description}</p>
+        <p class="font-grotesk text-9xl">{siteConfig.description}</p>
+        <h3>Literata</h3>
+        <p class="font-literata">{siteConfig.description}</p>
+        <p class="font-literata text-9xl">{siteConfig.description}</p>
+    </div>
+    <div>
+        <h2 class="text-mal-font">Headings</h2>
+        <hr class="h-1 bg-mal-accent border-0 my-4">
+    </div>
+    <div>
+        <h2 class="text-mal-font">Buttons</h2>
+        <hr class="h-1 bg-mal-accent border-0 my-4">
+    </div>
+    <div>
+        <h2 class="text-mal-font">Cards</h2>
+        <hr class="h-1 bg-mal-accent border-0 my-4">
+    </div>
+    <div>
+        <h2 class="text-mal-font">Effects</h2>
+        <hr class="h-1 bg-mal-accent border-0 my-4">
+    </div>
+    <div>
+        <h2 class="text-mal-font">Images</h2>
+        <hr class="h-1 bg-mal-accent border-0 my-4">
+    </div>
+    <div>
+        <h2 class="text-mal-font">Components</h2>
+        <hr class="h-1 bg-mal-accent border-0 my-4">
+    </div>
+    <div>
+        <h2 class="text-mal-font">Icons</h2>
+        <hr class="h-1 bg-mal-accent border-0 my-4">
+    </div>
+    <div class="trapezoid bg-mal-secondary flex flex-wrap">
+      <p class="text-mal-primary font-zodiak text-2xl">
+        <span>"</span>{siteConfig.intro}<span>"</span>
+      </p>
+      <p class="text-mal-primary font-zodiak text-2xl">
+        - {siteConfig.author} -
+      </p>
+    </div>
+  </div>
+</MainLayout>
