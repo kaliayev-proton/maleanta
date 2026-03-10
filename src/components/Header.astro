@@ -2,8 +2,8 @@
 import { siteConfig } from "../config/site-config";
 ---
 
-<header class="border-mal-accent p-5 border-t-2 border-b-2 mb-2 mt-2">
-  <h1 class="uppercase type-writer text-mal-font">
-    {[...siteConfig.title].map((char) => <span>{char}</span>)}
+<header class="p-5 mb-20 mt-2 flex items-center justify-center">
+  <h1 class="lowecase type-writer text-mal-font font-grotesk text-8xl">
+    {[...siteConfig.title].map((char, i) => <span class={`${i === 7 ? 'text-mal-accent' : ''}`}>{char}</span>)}
   </h1>
 </header>
