@@ -6,7 +6,6 @@ author: jane-doe
 # image: https://placehold.co/1400x900/
 image: 'images/post-01.png'
 tags: [JavaScript, ES6, Programming]
-layout: ../../layouts/BlogLayout.astro
 ---
 
 # Explorando Funciones de ES6
