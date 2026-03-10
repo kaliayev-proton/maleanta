@@ -1,43 +1,36 @@
 ---
-import { getCollection } from "astro:content";
-import TypeBlogPost from "src/components/TypeBlogPost.astro";
+import { Image } from "astro:assets";
+import MainLayout from "src/layouts/MainLayout.astro";
+import logo1 from "../../assets/images/maleanta_logo1.png";
 import { siteConfig } from "../config/site-config";
-import MainLayout from "../layouts/MainLayout.astro";
 
-const blogPosts = await getCollection(
-  "blog",
-  (post) => post.data.isDraft === false,
-);
 ---
 
 <MainLayout title="Maleanta Editorial">
-  <div class="">
-    <div class="">
-      <div class="">
-        <a class="btn-primary mr-4 text-mal-primary" href="/blog/1">Go to Blog</a>
-        <a class="btn-primary mr-4 text-mal-primary" href="/authors">Go to Authors</a>
-        <div class="trapezoid bg-mal-secondary flex flex-wrap">
-          <p class="text-mal-primary font-telma text-2xl">
-            {siteConfig.description}
-          </p>
-          <p class="text-mal-primary font-zodiak text-2xl">
-            {siteConfig.description}
-          </p>
-          <p class="text-mal-primary font-literata text-2xl">
-            {siteConfig.description}
-          </p>
-          <p class="text-mal-primary font-inter text-2xl">
-            {siteConfig.description}
-          </p>
-          <p class="text-mal-primary font-grotesk text-2xl">
-            {siteConfig.description}
-          </p>
-        </div>
+  <div class="h-screen grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="p-4 font-zodiak col-span-2">
+      <p class="text-5xl text-mal-font-paragraph">
+        Los libros cambian la forma en que pensamos.
+      </p>
+      <p class="text-3xl text-mal-font-paragraph">
+        Este proyecto nace para explorar historias, ideas y autores que merecen
+        ser descubiertos.
+      </p>
+
+      <div class="flex items-center justify-center mt-20">
+        <Image src={logo1} alt="Autor" width={150} />
       </div>
+    </div>
+    <div>
       <div
-        class=""
+        class="trapezoid bg-mal-secondary flex flex-wrap items-start h-full m-3"
       >
-        {blogPosts.map((post, index) => <TypeBlogPost post={post} key={index} />)}
+        <p class="text-mal-primary font-zodiak text-2xl">
+          <span>"</span>{siteConfig.intro}<span>"</span>
+        </p>
+        <p class="text-mal-primary font-zodiak text-2xl">
+          - {siteConfig.author} -
+        </p>
       </div>
     </div>
   </div>
