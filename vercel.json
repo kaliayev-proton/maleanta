@@ -1,5 +1,10 @@
 {
   "redirects": [
+    { "source": "/posts/:name", "destination": "/", "permanent": true  },
+    { "source": "/pieces", "destination": "/", "permanent": true  },
+    { "source": "/news", "destination": "/", "permanent": true  },
+    { "source": "/blog/:name", "destination": "/", "permanent": true  },
+    { "source": "/authors", "destination": "/", "permanent": true  },
     { "source": "/posts/:name", "destination": "/", "permanent": true  }
   ]
 }
