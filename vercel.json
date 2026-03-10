@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/now" }
+    { "source": "/", "destination": "/now", "permanent": true }
   ]
 }
