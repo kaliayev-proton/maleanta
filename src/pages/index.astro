@@ -7,7 +7,7 @@ import { siteConfig } from "../config/site-config";
 
 <MainLayout title="Maleanta Editorial">
   <div class="h-screen flex flex-col gap-4">
-    <div class="p-4 font-zodiak col-span-2">
+    <div class="max-w-6xl mx-auto px-4 p-4 font-zodiak col-span-2">
       <h2><span class="text-mal-accent">¿</span>Quiénes somos?</h2>
       <p class="text-2xl text-mal-font-paragraph">
         {siteConfig.whoWeAre}
@@ -21,7 +21,7 @@ import { siteConfig } from "../config/site-config";
     </div>
     <div>
       <div
-        class="trapezoid bg-mal-secondary flex flex-wrap items-start h-full m-3"
+        class="trapezoid bg-mal-secondary flex flex-wrap items-start h-full"
       >
         <p class="text-mal-primary font-zodiak text-2xl">
           <span>"</span>{siteConfig.intro}<span>"</span>
