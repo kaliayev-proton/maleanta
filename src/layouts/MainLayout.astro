@@ -16,16 +16,71 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Descripción clara de tu proyecto" />
     <!-- Preload fuentes para mejorar rendimiento -->
-    <link rel="preload" href="/src/assets/fonts/Literata-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/src/assets/fonts/Literata-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/src/assets/fonts/Literata-Medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/src/assets/fonts/Literata-Light.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/src/assets/fonts/Literata-Italic.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/src/assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/src/assets/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/src/assets/fonts/Zodiak-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/src/assets/fonts/Zodiak-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Literata-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Literata-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Literata-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Literata-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Literata-Italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Inter-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Inter-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Zodiak-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/Zodiak-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -33,6 +88,35 @@ const { title } = Astro.props;
       href={new URL("rss.xml", Astro.site)}
     />
     <title>{title}</title>
+
+    <meta
+      name="description"
+      content="Editorial independiente del sur de Madrid con interés en la publicación de obras de contenido transformador con identidad propia."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://maleanta.com/" />
+
+    <!-- Open Graph (para redes sociales) -->
+    <meta property="og:title" content="Maleanta — Ediciones" />
+    <meta
+      property="og:description"
+      content="Contenido, ideas y proyectos editoriales con identidad propia."
+    />
+    <meta property="og:url" content="https://maleanta.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://maleanta.com/icons/path1.svg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Maleanta — Ediciones" />
+    <meta
+      name="twitter:description"
+      content="Contenido, ideas y proyectos editoriales con identidad propia."
+    />
+    <meta name="twitter:image" content="https://maleanta.com/icons/path1.svg" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#E5E7EB" />
 
     <ClientRouter />
   </head>
