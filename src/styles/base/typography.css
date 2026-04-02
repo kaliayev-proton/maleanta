@@ -1,14 +1,14 @@
 @layer base {
   h1 {
-    @apply text-4xl text-mal-font;
+    @apply text-8xl text-mal-font;
   }
 
   h2 {
-    @apply text-2xl text-mal-font-paragraph my-5;
+    @apply text-6xl text-mal-font-paragraph my-5;
   }
 
   h3 {
-    @apply text-xl text-mal-font-paragraph my-5;
+    @apply text-4xl text-mal-font-paragraph my-5;
   }
 
   p {

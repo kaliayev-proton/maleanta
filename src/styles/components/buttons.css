@@ -1,19 +1,25 @@
 @layer components {
-	/* .container-page {
+  /* .container-page {
     @apply max-w-6xl mx-auto px-6;
   } */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors duration-200 p-4 cursor-pointer;
+  }
 
-	.btn-primary {
-		@apply px-4 py-2 rounded-lg font-medium transition;
-	}
-	.btn-secondary {
-		@apply px-4 py-2 rounded-lg font-medium transition;
-	}
-	.btn-tertiary {
-		@apply px-4 py-2 rounded-lg font-medium transition;
-	}
+  .btn-primary {
+    @apply hover:bg-neutral-800 bg-mal-primary text-mal-neutral border-3 border-mal-secondary;
+  }
+  .btn-secondary {
+    @apply hover:bg-neutral-800 bg-mal-secondary text-mal-neutral border-3 border-mal-primary;
+  }
+  .btn-tertiary {
+    @apply hover:bg-neutral-800 bg-mal-tertiary text-mal-neutral;
+  }
+  .btn-accent {
+    @apply hover:bg-neutral-800 bg-mal-accent text-mal-neutral;
+  }
 
-	/* .btn-primary {
+  /* .btn-primary {
     @apply btn bg-black text-white hover:bg-neutral-800;
   } */
 }

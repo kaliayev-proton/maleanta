@@ -157,4 +157,57 @@
     font-style: normal;
     font-display: swap;
   }
+  @font-face {
+    font-family: "Gaegu";
+    src: url("/src/assets/fonts/Gaegu-Bold.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Gaegu";
+    src: url("/src/assets/fonts/Gaegu-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Gaegu";
+    src: url("/src/assets/fonts/Gaegu-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "DoubleBass";
+    src: url("/src/assets/fonts/DoubleBass-Regular-trial.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "DoubleBass";
+    src: url("/src/assets/fonts/DoubleBass-Bold-trial.woff2") format("woff2");
+    font-weight: 500;
+    font-style: bold;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "DoubleBass";
+    src: url("/src/assets/fonts/DoubleBass-Light-trial.woff2") format("woff2");
+    font-weight: 300;
+    font-style: light;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "DoubleBass";
+    src: url("/src/assets/fonts/DoubleBass-Thin-trial.woff2") format("woff2");
+    font-weight: 100;
+    font-style: thin;
+    font-display: swap;
+  }
 }
