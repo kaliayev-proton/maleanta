@@ -1,7 +1,8 @@
 ---
-import { Image } from "astro:assets";
+import Calendar from "src/components/Calendar.astro";
+// import { Image } from "astro:assets";
 import MainLayout from "src/layouts/MainLayout.astro";
-import logo1 from "../assets/images/maleanta_logo1.png";
+// import logo1 from "../assets/images/maleanta_logo1.png";
 import Facebook from "../components/icons/media/facebook.astro";
 import Instagram from "../components/icons/media/instagram.astro";
 import Mastodon from "../components/icons/media/mastodon.astro";
@@ -35,8 +36,12 @@ const media = [
 <MainLayout title="Maleanta Ediciones">
   <div class="h-screen flex flex-col gap-4">
     <div class="max-w-6xl mx-auto px-4 p-4 font-zodiak col-span-2">
-      <h2><span class="text-mal-primary">¿</span>Quiénes somos?</h2>
-      <p class="text-2xl text-mal-font-paragraph whitespace-pre-line" set:html={siteConfig.whoWeAre}></p>
+      <!-- <h2><span class="text-mal-primary">¿</span>Quiénes somos?</h2> -->
+      <p
+        class="text-2xl text-mal-font-paragraph whitespace-pre-line"
+        set:html={siteConfig.whoWeAre}
+      />
+      <Calendar />
       <div class="flex items-center flex-col gap-4 mt-30 md:flex-row">
         <p class="text-2xl text-mal-font-paragraph">info@maleanta.com</p>
         <ul class="text-zinc-700 gap-4 flex items-center">
@@ -57,10 +62,9 @@ const media = [
           }
         </ul>
       </div>
-
-      <div class="flex items-center justify-center mt-20">
+      <!-- <div class="flex items-center justify-center mt-20">
         <Image src={logo1} alt="Autor" width={150} />
-      </div>
+      </div> -->
     </div>
     <div>
       <div class="trapezoid bg-mal-secondary flex flex-wrap items-start h-full">

@@ -8,11 +8,15 @@
   }
 
   h3 {
-    @apply text-3xl md:text-5xl text-mal-font-paragraph my-5;
+    @apply text-3xl md:text-5xl text-mal-font-paragraph my-3;
+  }
+
+  h4 {
+    @apply text-2xl md:text-3xl text-mal-font-paragraph my-3;
   }
 
   p {
-    @apply text-base text-mal-font-paragraph my-5;
+    @apply text-base text-mal-font-paragraph my-2;
   }
 
   a {

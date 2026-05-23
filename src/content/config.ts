@@ -35,7 +35,20 @@ const authorCollection = defineCollection({
 		}),
 });
 
+const eventCollection = defineCollection({
+	type: "content",
+	schema: () =>
+		z.object({
+			title: z.string(),
+			date: z.date(),
+			tags: z.array(z.string()),
+			description: z.string().optional(),
+			author: reference("author").optional(),
+		}),
+});
+
 export const collections = {
 	blog: blogCollection,
 	author: authorCollection,
+	event: eventCollection,
 };

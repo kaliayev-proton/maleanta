@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from "astro:content";
+
+const events = await getCollection("event");
+
+const renderedEvents = await Promise.all(
+  events.map(async (event) => {
+    const { Content } = await render(event);
+
+    return {
+      ...event,
+      Content,
+    };
+  }),
+);
+---
+
+<section class="mt-20">
+  <h2>Libros en preparación</h2>
+  {
+    renderedEvents.map((event) => (
+      <>
+        <article class="flex flex-col items-start justify-between py-10">
+          <event.Content />
+        </article>
+        <hr />
+      </>
+    ))
+  }
+</section>
