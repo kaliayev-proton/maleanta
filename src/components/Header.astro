@@ -3,7 +3,7 @@ import { siteConfig } from "../config/site-config";
 ---
 
 <header class="p-5 md:mb-20 mt-2 flex items-center justify-center">
-  <h1 class="type-writer text-mal-font font-sentient text-6xl md:text-9xl">
+  <h1 class="text-mal-font font-sentient text-6xl md:text-9xl">
     {[...siteConfig.title].map((char, i) => <span class={`${i === 3 ? 'text-mal-primary torsion' : ''}`}>{char}</span>)}
   </h1>
 </header>
