@@ -2,27 +2,68 @@
 import { Image } from "astro:assets";
 import MainLayout from "src/layouts/MainLayout.astro";
 import logo1 from "../assets/images/maleanta_logo1.png";
+import Facebook from "../components/icons/media/facebook.astro";
+import Instagram from "../components/icons/media/instagram.astro";
+import Mastodon from "../components/icons/media/mastodon.astro";
+import XTwitter from "../components/icons/media/x-twitter.astro";
 import { siteConfig } from "../config/site-config";
+
+const media = [
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/maleanta.ediciones/",
+    icon: Instagram,
+  },
+  {
+    name: "X-Twitter",
+    url: "https://twitter.com/maleanta_ediciones",
+    icon: XTwitter,
+  },
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/maleanta.ediciones",
+    icon: Facebook,
+  },
+  {
+    name: "Mastodon",
+    url: "https://mastodon.social/@maleanta",
+    icon: Mastodon,
+  },
+];
 ---
 
 <MainLayout title="Maleanta Ediciones">
   <div class="h-screen flex flex-col gap-4">
     <div class="max-w-6xl mx-auto px-4 p-4 font-zodiak col-span-2">
-      <h2><span class="text-mal-accent">¿</span>Quiénes somos?</h2>
-      <p class="text-2xl text-mal-font-paragraph">
-        {siteConfig.whoWeAre}
-      </p>
-      <h3>Contacto</h3>
-      <p class="text-2xl text-mal-font-paragraph">info@maleanta.com</p>
+      <h2><span class="text-mal-primary">¿</span>Quiénes somos?</h2>
+      <p class="text-2xl text-mal-font-paragraph whitespace-pre-line" set:html={siteConfig.whoWeAre}></p>
+      <div class="flex items-center flex-col gap-4 mt-30 md:flex-row">
+        <p class="text-2xl text-mal-font-paragraph">info@maleanta.com</p>
+        <ul class="text-zinc-700 gap-4 flex items-center">
+          {
+            media.map((item) => (
+              <li class="inline-block">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visita nuestro ${item.name}`}
+                  class="size-10"
+                >
+                  <item.icon class="size-10" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
 
       <div class="flex items-center justify-center mt-20">
         <Image src={logo1} alt="Autor" width={150} />
       </div>
     </div>
     <div>
-      <div
-        class="trapezoid bg-mal-secondary flex flex-wrap items-start h-full"
-      >
+      <div class="trapezoid bg-mal-secondary flex flex-wrap items-start h-full">
         <p class="text-mal-primary font-zodiak text-2xl">
           <span>"</span>{siteConfig.intro}<span>"</span>
         </p>

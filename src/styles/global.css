@@ -8,5 +8,6 @@
 @import "./components/buttons.css";
 @import "./shapes/trapezoid.css";
 @import "./effects/type-writer.css";
+@import "./effects/torsion.css";
 @tailwind utilities;
 /* @reference "tailwindcss"; */

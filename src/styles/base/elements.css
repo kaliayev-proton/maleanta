@@ -7,3 +7,8 @@ html {
 body {
   /* @apply mt-10; */
 }
+
+strong {
+  color: var(--color-mal-primary);
+  font-weight: normal;
+}

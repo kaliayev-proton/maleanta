@@ -200,14 +200,100 @@
     font-family: "DoubleBass";
     src: url("/src/assets/fonts/DoubleBass-Light-trial.woff2") format("woff2");
     font-weight: 300;
-    font-style: light;
+    font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "DoubleBass";
     src: url("/src/assets/fonts/DoubleBass-Thin-trial.woff2") format("woff2");
     font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-Bold.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-BoldItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-Extralight.woff2") format("woff2");
+    font-weight: 300;
+    font-style: light;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-ExtralightItalic.woff2") format("woff2");
+    font-weight: 100;
     font-style: thin;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-Italic.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-Variable.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sentient";
+    src: url("/src/assets/fonts/Sentient-VariableItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
     font-display: swap;
   }
 }
