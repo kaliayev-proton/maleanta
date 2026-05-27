@@ -13,7 +13,19 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      type="image/svg+xml"
+      rel="icon"
+      href="/favicon-light.svg"
+      media="(prefers-color-scheme: light)"
+    />
+
+    <link
+      type="image/svg+xml"
+      rel="icon"
+      href="/favicon-dark.svg"
+      media="(prefers-color-scheme: dark)"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="Descripción clara de tu proyecto" />
@@ -102,9 +114,21 @@ const { title } = Astro.props;
       property="og:description"
       content="Contenido, ideas y proyectos editoriales con identidad propia."
     />
-    <meta property="og:url" content="https://maleanta.com/" />
+    <meta
+      property="og:url"
+      content="https://mastodon.social/@maleantaediciones"
+    />
+    <meta
+      property="og:url"
+      content="https://www.facebook.com/profile.php?id=61589566773539"
+    />
+    <meta
+      property="og:url"
+      content="https://www.instagram.com/maleantaediciones/"
+    />
+    <meta property="og:url" content="https://x.com/maleantaediciones" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://maleanta.com/icons/path1.svg" />
+    <meta property="og:image" content="https://maleanta.com/icons/path2.svg" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -113,7 +137,7 @@ const { title } = Astro.props;
       name="twitter:description"
       content="Contenido, ideas y proyectos editoriales con identidad propia."
     />
-    <meta name="twitter:image" content="https://maleanta.com/icons/path1.svg" />
+    <meta name="twitter:image" content="https://maleanta.com/icons/path2.svg" />
 
     <!-- Theme -->
     <meta name="theme-color" content="#E5E7EB" />
